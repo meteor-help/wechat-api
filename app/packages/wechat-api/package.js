@@ -13,7 +13,9 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
+  api.use('meteorhacks:picker');
   api.addFiles('wechat-api.js');
+  api.addFiles('server/server_routes_wechat.js');
 });
 
 Package.onTest(function(api) {
